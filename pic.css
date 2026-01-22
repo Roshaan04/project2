@@ -16,14 +16,6 @@ body{
     margin-left:20px;
     vertical-align:right;
 }
-.page{
-    width:900px;
-    height:600px;
-    position:relative;
-    overflow:hidden;
-    background:white;
-       /* SPACE RESERVED FOR LOGO */
-}
 .triangle{
     position: absolute;
     width:99%;
