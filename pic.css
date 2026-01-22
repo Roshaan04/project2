@@ -1,0 +1,146 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body{
+    background: #e6e6e6;
+}
+.logo{
+    width:130px;
+    height: 130px;
+    margin-left:20px;
+    vertical-align:right;
+}
+.page{
+    width:900px;
+    height:600px;
+    position:relative;
+    overflow:hidden;
+    background:white;
+       /* SPACE RESERVED FOR LOGO */
+}
+.triangle{
+    position: absolute;
+    width:99%;
+    margin-left:20px;
+    height:100%;
+    background: #8b2c2c;   /* same red color */
+    /* THIS CREATES THE SHARP CUT */
+    clip-path: polygon(
+        0% 0,        /* top-left */
+        100% 0,     /* top-right */
+        100% 85%,   /* bottom-right cut */
+        85% 100%,  /* diagonal corner */
+        0 100%     /* bottom-left */
+    );
+    z-index: 1;
+}
+
+
+/* CONTENT ON TOP OF TRIANGLE */
+.content{
+    position: absolute;
+    right:100px;
+    width: 350px;
+    color: white;
+    margin-top:60px;
+    z-index: 3;
+}
+/* PARAGRAPH */
+.small{
+  font-family: arial;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.which{
+  font-weight: bold;
+  color: black;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+/* INPUT FIELDS */
+.content input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: transparent;
+    border: 1px solid white;
+    color:white;
+}
+/* PLACEHOLDER COLOR */
+.content input::placeholder{
+    color:white;
+}
+/* BUTTON */
+.content button{
+    width: 100%;
+    padding: 12px;
+   margin-top: 29px;
+    background: white;
+    color:#8b2c2c;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.award textarea {
+  width:250px;
+  height:55px;
+  padding-top: 10px;
+  padding-left:8px;
+  background: transparent;   /* transparent background */
+  border:1px solid white;
+  font-family: Arial;
+  font-size: 12px;
+}
+.award textarea::placeholder{
+  color: rgb(194, 189, 189);
+}
+.award label {
+  font-size: 14px;
+  color: white;
+  vertical-align: top;
+}
+.award input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  margin-left: 12px;
+  accent-color: white; /* make checkbox white (modern browsers) */
+}
+ .left{
+  margin-top:210px;
+  position: absolute;
+    left:40px;
+    width: 400px;
+    color: white;
+    margin-right: 200px;
+    margin-left:35px;
+    z-index:3;
+}
+.left h1{
+  font-family:arial,cursive;
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 15px;
+      z-index: 3;
+}
+.stuff{
+  font-family: arial;
+  font-size: 12px;
+  vertical-align: left;
+  color: black;
+}
+.deadline{
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size:20px;
+}
